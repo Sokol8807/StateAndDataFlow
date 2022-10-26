@@ -16,6 +16,7 @@
 		068B2188290707A00042E590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 068B2187290707A00042E590 /* Assets.xcassets */; };
 		068B218B290707A00042E590 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 068B218A290707A00042E590 /* Preview Assets.xcassets */; };
 		068B2192290709B80042E590 /* ButtonVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068B2191290709B80042E590 /* ButtonVIew.swift */; };
+		FD0BB48D2909C8160024DD1E /* TextCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0BB48C2909C8160024DD1E /* TextCountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		068B2187290707A00042E590 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		068B218A290707A00042E590 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		068B2191290709B80042E590 /* ButtonVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonVIew.swift; sourceTree = "<group>"; };
+		FD0BB48C2909C8160024DD1E /* TextCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				068B21852907079E0042E590 /* ContentView.swift */,
 				064667A729070DC7001EC31D /* TimeCounter.swift */,
 				068B2191290709B80042E590 /* ButtonVIew.swift */,
+				FD0BB48C2909C8160024DD1E /* TextCountView.swift */,
 				064667A92907168B001EC31D /* RegisterView.swift */,
 				064667AD290718F9001EC31D /* StarterView.swift */,
 				064667AB2907175A001EC31D /* UserManager.swift */,
@@ -154,6 +157,7 @@
 			files = (
 				064667AE290718F9001EC31D /* StarterView.swift in Sources */,
 				064667AC2907175A001EC31D /* UserManager.swift in Sources */,
+				FD0BB48D2909C8160024DD1E /* TextCountView.swift in Sources */,
 				068B21862907079E0042E590 /* ContentView.swift in Sources */,
 				064667AA2907168B001EC31D /* RegisterView.swift in Sources */,
 				068B2192290709B80042E590 /* ButtonVIew.swift in Sources */,
