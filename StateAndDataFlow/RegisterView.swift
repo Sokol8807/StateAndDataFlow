@@ -12,6 +12,7 @@ struct RegisterView: View {
     @State private var name = ""
     @State private var countCharecter = 0
     @State private var colorText = Color.red
+    var textCount = 0
     
     var body: some View {
         VStack {
@@ -20,6 +21,8 @@ struct RegisterView: View {
                     .multilineTextAlignment(.center)
                 TextCountView(countCharacter: $countCharecter, colorText: $colorText)
                     .padding(.trailing, 20.0)
+                            
+                    }
             }
             Button(action: registerUser) {
                 HStack {
@@ -29,7 +32,7 @@ struct RegisterView: View {
             }
         }
     }
-}
+
 
 extension RegisterView {
     private func registerUser() {
