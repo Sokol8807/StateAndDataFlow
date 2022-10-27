@@ -10,6 +10,8 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject private var user: UserManager
     @StateObject private var timer = TimeCounter()
+    let startButtonColor: Color = .red
+    let logoutButtonColor: Color = .blue
     
     var body: some View {
         VStack {
@@ -20,7 +22,7 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .padding(.top, 100)
             Spacer()
-            ButtonVIew(timer: timer)
+            ButtonVIew(timer: timer, color: .red)
             Spacer()
         }
     }

@@ -1,19 +1,20 @@
 //
-//  ButtonVIew.swift
+//  LogoutButtonView.swift
 //  StateAndDataFlow
 //
-//  Created by brubru on 24.10.2022.
+//  Created by Ilya Sokolov on 27.10.2022.
 //
 
 import SwiftUI
 
-struct ButtonVIew: View {
-   @ObservedObject var timer: TimeCounter
+struct LogoutButtonView: View {
+    
     let color: Color
+    let buttonAction: () -> ()
     
     var body: some View {
-        Button(action: { timer.startTimer()}) {
-            Text(timer.buttonTitle)
+        Button(action: { buttonAction()}) {
+            Text("LogOut")
                 .font(.title)
                 .fontWeight(.bold)
                 .foregroundColor(.white)
@@ -28,8 +29,8 @@ struct ButtonVIew: View {
     }
 }
 
-struct ButtonVIew_Previews: PreviewProvider {
+struct LogoutButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonVIew(timer: TimeCounter(), color: .red)
+        LogoutButtonView(color: .blue) { }
     }
 }
