@@ -24,6 +24,11 @@ struct ContentView: View {
             Spacer()
             ButtonVIew(timer: timer, color: .red)
             Spacer()
+            LogoutButtonView(color: logoutButtonColor, buttonAction: {
+                
+                user.isRegister = false
+            })
+       
         }
     }
 }
