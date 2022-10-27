@@ -19,18 +19,28 @@ struct LogoutButtonView: View {
                 .fontWeight(.bold)
                 .foregroundColor(.white)
         }
-        .frame(width: 200, height: 60)
-        .background(color)
-        .cornerRadius(20)
-        .overlay {
-            RoundedRectangle(cornerRadius: 20)
-                .stroke(Color.black, lineWidth: 4)
+        .modifier(ButtonModify(buttonColor: color))
         }
     }
-}
+
 
 struct LogoutButtonView_Previews: PreviewProvider {
     static var previews: some View {
         LogoutButtonView(color: .blue) { }
+    }
+}
+
+struct ButtonModify: ViewModifier {
+    let buttonColor: Color
+    func body(content: Content) -> some View {
+        content
+            .frame(width: 200, height: 60)
+            .background(buttonColor)
+            .cornerRadius(20)
+            .overlay {
+                RoundedRectangle(cornerRadius: 20)
+                    .stroke(Color.black, lineWidth: 4)
+                
+            }
     }
 }
